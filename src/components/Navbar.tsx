@@ -31,7 +31,9 @@ const Navbar = () => {
     return (
         <nav className="navbar" id="navbar">
             <div className="nav-container">
-                <div className="logo">RS.</div>
+                <div className="logo">
+                    RS.
+                </div>
                 <div className="menu-icon" id="menuIcon">
                     <FontAwesomeIcon icon={faBars} />
                 </div>
