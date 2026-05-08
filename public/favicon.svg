@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5e00"></stop>
+      <stop offset="100%" stop-color="#ff9a4d"></stop>
+    </linearGradient>
+  </defs><rect width="64" height="64" rx="16" fill="#0f0f0f"></rect><circle cx="32" cy="32" r="24" fill="none" stroke="url(#grad)" stroke-width="2"></circle><text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="24" font-weight="900" font-family="Georgia, Poppins, serif" fill="url(#grad)">
+    RS
+  </text><circle cx="48" cy="20.5" r="1.6" fill="url(#grad)" opacity="0.9"></circle></svg>
