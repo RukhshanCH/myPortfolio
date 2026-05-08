@@ -8,6 +8,7 @@ import usePortfolioInteractions from './components/usePortfolioInteractions';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
+import Services from './pages/Services';
 
 function App() {
   const { scrollBtnRef } = usePortfolioInteractions();
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Services />
 
       <button className="scroll-top" ref={scrollBtnRef} id="scrollTop">
         <FontAwesomeIcon icon={faArrowUp} />
