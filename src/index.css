@@ -737,6 +737,14 @@ footer {
 /* MOBILE */
 
 @media (max-width: 768px) {
+    .social-links {
+        margin-top: 1rem !important;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
     .floating-wrapper {
         right: 18px;
         bottom: 18px;
