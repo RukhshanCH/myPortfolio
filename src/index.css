@@ -202,27 +202,26 @@ section {
 }
 
 .separator {
-  display: flex;
-  align-items: center;
-  margin: 10px 120px;
-  padding: 0 120px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
 .separator::before,
 .separator::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: #ff5e0030;
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ff5e0030;
 }
 
 .separator span {
-  width: 8px;
-  height: 8px;
-  background: #ff5e00;
-  border-radius: 50%;
-  margin: 0 12px;
-  box-shadow: 0 0 8px #ff5e00;
+    width: 8px;
+    height: 8px;
+    background: #ff5e00;
+    border-radius: 50%;
+    margin: 0 12px;
+    box-shadow: 0 0 8px #ff5e00;
 }
 
 .section-title {
@@ -282,11 +281,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 180px;
+    height: auto;
     background: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 94, 0, 0.3);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -305,6 +306,28 @@ section {
 
 .skill-card span {
     font-weight: 600;
+}
+
+/* ===== MARQUEE ===== */
+.marquee-wrap {
+    overflow: hidden;
+}
+
+.marquee-inner {
+    display: flex;
+    gap: 1.5rem;
+    animation: marquee 20s linear infinite;
+    width: max-content;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Projects Grid */
@@ -657,11 +680,9 @@ footer {
 }
 
 .email {
-    background: linear-gradient(
-        135deg,
-        #ea4335,
-        #c5221f
-    );
+    background: linear-gradient(135deg,
+            #ea4335,
+            #c5221f);
 }
 
 /* TOOLTIP */
@@ -706,7 +727,7 @@ footer {
 .main-btn {
     width: 58px;
     height: 58px;
-    
+
     border: none;
     outline: none;
 

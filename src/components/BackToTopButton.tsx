@@ -21,13 +21,12 @@ const StyledWrapper = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    // border: 2px dashed rgba(255, 94, 0, 0.5);
+    background-color: rgb(30, 30, 30);
+    border: transparent;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    // box-shadow: 0px 0px 0px 4px rgba(255, 94, 0, 0.253);
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
