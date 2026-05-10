@@ -12,7 +12,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  img,  
+  // img,  
   title,
   description,
   techStack,
@@ -21,9 +21,9 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="project-card">
-      <div className="project-img">
-        <img src={img} alt={title} />
-      </div>
+      {/* <div className="project-img">
+        <img src={img} alt={title} className="project-image" />
+      </div> */}
 
       <div className="project-info">
         <h3>{title}</h3>
@@ -39,7 +39,7 @@ const ProjectCard = ({
         <div className="project-links">
           {githubLink && (
             <a
-              href={githubLink}
+              href={`https://github.com/RukhshanCH/${githubLink}`}
               target="_blank"
               rel="noopener noreferrer"
             >

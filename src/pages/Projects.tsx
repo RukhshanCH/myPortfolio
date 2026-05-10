@@ -4,27 +4,27 @@ const Projects = () => {
     const data = [
         {
             img: " ",
-            title: "AI Face Detector",
-            description: "Real-time face detection using webcam and TensorFlow.",
-            techStack: ["Flask", "TensorFlow", "OpenCV"],
-            githubLink: "https://github.com/username/project",
-            demoLink: "https://project-demo.com"
+            title: "iNotebook",
+            description: "A simple note-taking app with real-time synchronization.",
+            techStack: ["React", "Node.js", "MongoDB"],
+            githubLink: "iNotebook",
+            demoLink: "https://inoteeboook.netlify.app/"
         },
         {
             img: " ",
-            title: "AI Face Detector",
-            description: "Real-time face detection using webcam and TensorFlow.",
+            title: "AI Face Styler",
+            description: "An AI-powered tool that applies artistic styles to facial images in real-time.",
             techStack: ["Flask", "TensorFlow", "OpenCV"],
-            githubLink: "https://github.com/username/project",
-            demoLink: "https://project-demo.com"
+            githubLink: "AI-Face-Styler",
+            demoLink: " "
         },
         {
             img: " ",
-            title: "AI Face Detector",
-            description: "Real-time face detection using webcam and TensorFlow.",
-            techStack: ["Flask", "TensorFlow", "OpenCV"],
-            githubLink: "https://github.com/username/project",
-            demoLink: "https://project-demo.com"
+            title: "E-commerce Platform",
+            description: "A full-featured e-commerce platform with payment integration.",
+            techStack: ["HTML", "CSS", "JavaScript"],
+            githubLink: "E-commerce-frontend-design",
+            demoLink: "https://e-commerce-website-2025.netlify.app/"
         },
     ];
     return (
