@@ -80,7 +80,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 1rem 2rem;
@@ -199,6 +199,30 @@ section {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 10px 120px;
+  padding: 0 120px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ff5e0030;
+}
+
+.separator span {
+  width: 8px;
+  height: 8px;
+  background: #ff5e00;
+  border-radius: 50%;
+  margin: 0 12px;
+  box-shadow: 0 0 8px #ff5e00;
 }
 
 .section-title {

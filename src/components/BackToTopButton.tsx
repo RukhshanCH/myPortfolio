@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import usePortfolioInteractions from './usePortfolioInteractions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 const Button = () => {
   const { scrollBtnRef } = usePortfolioInteractions();
@@ -7,9 +9,7 @@ const Button = () => {
   return (
     <StyledWrapper>
       <button ref={scrollBtnRef} className="button scroll-top">
-        <svg className="svgIcon" viewBox="0 0 384 512">
-          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-        </svg>
+        <FontAwesomeIcon className="svgIcon" icon={faCircleUp} />
       </button>
     </StyledWrapper>
   );
@@ -22,32 +22,37 @@ const StyledWrapper = styled.div`
     height: 50px;
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
-    border: none;
+    // border: 2px dashed rgba(255, 94, 0, 0.5);
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(255, 94, 0, 0.253);
+    // box-shadow: 0px 0px 0px 4px rgba(255, 94, 0, 0.253);
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
   }
 
   .svgIcon {
-    width: 12px;
+    width: 27px;
+    height: 27px;
+    color: #fff;
     transition-duration: 0.3s;
   }
 
-  .svgIcon path {
-    fill: rgba(255, 94, 0, 0.7);
-  }
+  // .svgIcon path {
+  //   fill: rgba(255, 94, 0, 0.7);
+  // }
 
   .button:hover {
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
-    background-color: #ff5e00;
+    background: linear-gradient(95deg, #ff5e00, #ff9833);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
     align-items: center;
+    border: transparent;
   }
 
   .button:hover .svgIcon {

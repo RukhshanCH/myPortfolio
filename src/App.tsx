@@ -16,11 +16,27 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <div className="separator">
+        <span></span>
+      </div>
       <About />
+      <div className="separator">
+        <span></span>
+      </div>
       <Skills />
+      <div className="separator">
+        <span></span>
+      </div>
       <Projects />
+      <div className="separator">
+        <span></span>
+      </div>
       <Experience />
+      <div className="separator">
+        <span></span>
+      </div>
       <Services />
+      
       <Footer />
 
       <FloatingContactButton />
