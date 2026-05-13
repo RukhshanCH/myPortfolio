@@ -1,6 +1,10 @@
 :root {
-    --primary: #ff5e00;
+    --primary: #ff5e00; /* 00FFF0, rgba(0, 255, 240) */
     --secondary: #ff9833;
+    --shadow-color1: rgba(255, 94, 0, 0.1);
+    --shadow-color2: rgba(255, 94, 0, 0.2);
+    --shadow-color3: rgba(255, 94, 0, 0.3);
+    --shadow-color5: rgba(255, 94, 0, 0.5);
 }
 
 * {
@@ -43,7 +47,7 @@ html {
 /* Glow Orange Accents */
 .glow-text {
     color: var(--primary);
-    text-shadow: 0 0 8px rgba(255, 94, 0, 0.5);
+    text-shadow: 0 0 8px var(--shadow-color5);
 }
 
 .btn {
@@ -59,14 +63,14 @@ html {
 }
 
 .btn-primary {
-    background: linear-gradient(95deg, var(--primary), #ff9833);
+    background: linear-gradient(95deg, var(--primary), var(--secondary));
     color: #000;
-    box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
+    box-shadow: 0 4px 15px var(--shadow-color3);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
+    box-shadow: 0 8px 25px var(--shadow-color5);
 }
 
 .btn-outline {
@@ -76,7 +80,7 @@ html {
 }
 
 .btn-outline:hover {
-    background: rgba(255, 94, 0, 0.1);
+    background: var(--shadow-color1);
     transform: translateY(-3px);
 }
 
@@ -90,7 +94,7 @@ html {
     z-index: 1000;
     padding: 1rem 2rem;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(255, 94, 0, 0.2);
+    border-bottom: 1px solid var(--shadow-color2);
 }
 
 .nav-container {
@@ -188,7 +192,7 @@ html {
     transform: translate(-50%, -50%);
     width: 270px;
     height: 270px;
-    background: linear-gradient(135deg, var(--primary), #ff9833);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 50%;
     z-index: -1;
     /* filter: blur(60px); */
@@ -221,7 +225,6 @@ html {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    /* box-shadow: 0 10px 30px rgba(255, 94, 0, 0.3); */
 }
 
 .hero-content {
@@ -271,7 +274,8 @@ section {
     content: "";
     flex: 1;
     height: 1px;
-    background: var(--primary)30;
+    background: var(--primary);
+    opacity: 0.3;
 }
 
 .separator span {
@@ -344,7 +348,7 @@ section {
     height: auto;
     background: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 94, 0, 0.3);
+    border: 1px solid var(--shadow-color3);
     border-radius: 16px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -354,7 +358,7 @@ section {
 .skill-card:hover {
     transform: translateY(-8px);
     border-color: var(--primary);
-    box-shadow: 0 10px 25px rgba(255, 94, 0, 0.2);
+    box-shadow: 0 10px 25px var(--shadow-color2);
 }
 
 .skill-icon {
@@ -400,7 +404,7 @@ section {
     background: #0d0d0d;
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(255, 94, 0, 0.2);
+    border: 1px solid var(--shadow-color2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -443,7 +447,7 @@ section {
 }
 
 .tech-stack span {
-    background: rgba(255, 94, 0, 0.2);
+    background: var(--shadow-color2);
     padding: 0.2rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -498,7 +502,7 @@ section {
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
-    border: 1px solid rgba(255, 94, 0, 0.2);
+    border: 1px solid var(--shadow-color2);
     transition: all 0.3s;
 }
 
@@ -577,7 +581,7 @@ section {
 footer {
     text-align: center;
     padding: 2rem;
-    border-top: 1px solid rgba(255, 94, 0, 0.2);
+    border-top: 1px solid var(--shadow-color2);
 }
 
 /* Responsive */

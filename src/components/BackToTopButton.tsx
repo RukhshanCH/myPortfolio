@@ -47,9 +47,9 @@ const StyledWrapper = styled.div`
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
-    background: linear-gradient(95deg, var(--primary), #ff9833);
+    background: linear-gradient(95deg, var(--primary), var(--secondary));
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
+    box-shadow: 0 8px 25px var(--shadow-color5);
     align-items: center;
     border: transparent;
   }
