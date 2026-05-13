@@ -1,6 +1,7 @@
 import TypingEffect from "../components/TypingEffect"
 import LightRays from '../ReactBitComponents/LightRays'
 import CV from "../assets/CV.pdf"
+import heroImg from "../assets/RukhshanShahid.png"
 
 const Hero = () => {
     return (
@@ -20,15 +21,21 @@ const Hero = () => {
                 fadeDistance={1}
                 saturation={1}
             />
-            <div className="hero-content">
-                <h1>Rukhshan <span style={{ color: "#ff5e00" }}>Shahid</span></h1>
-                <div className="typed-text" id="typedElement">
-                    <TypingEffect />
+            <div className="hero-container">
+                <div className="hero-image">
+                    <span></span>
+                    <img src={heroImg} alt="Hero" />
                 </div>
-                <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>Crafting high-performance, modern web experiences with passion and precision. 2+ years of turning ideas into digital excellence.</p>
-                <div className="hero-btns">
-                    <a href={CV} download="resume.pdf" className="btn btn-outline">Download Resume</a>
-                    <a href="#projects" className="btn btn-primary">View Projects</a>
+                <div className="hero-content">
+                    <h1>Rukhshan <span style={{ color: "#ff5e00" }}>Shahid</span></h1>
+                    <div className="typed-text" id="typedElement">
+                        <TypingEffect />
+                    </div>
+                    <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>Crafting high-performance, modern web experiences with passion and precision. 2+ years of turning ideas into digital excellence.</p>
+                    <div className="hero-btns">
+                        <a href={CV} download="resume.pdf" className="btn btn-outline">Download Resume</a>
+                        <a href="#projects" className="btn btn-primary">View Projects</a>
+                    </div>
                 </div>
             </div>
         </section>

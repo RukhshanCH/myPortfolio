@@ -155,6 +155,11 @@ html {
     padding: 2rem;
 }
 
+.hero-container {
+    display: flex;
+    width: 1200px;
+}
+
 #hero-canvas {
     position: absolute;
     top: 0;
@@ -166,9 +171,58 @@ html {
     pointer-events: none;
 }
 
+.hero-image {
+    position: relative;
+    flex-basis: 30%;
+}
+
+.hero-image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 270px;
+    background: #ff5e00;
+    border-radius: 50%;
+    z-index: -1;
+    /* filter: blur(60px); */
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        /* transform: scale(0.8); */
+        opacity: 0.7;
+    }
+
+    50% {
+        /* transform: scale(1.2); */
+        opacity: 0.3;
+    }
+
+    100% {
+        /* transform: scale(0.8); */
+        opacity: 0.7;
+    }
+}
+
+.hero-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    /* box-shadow: 0 10px 30px rgba(255, 94, 0, 0.3); */
+}
+
 .hero-content {
+    flex-basis: 70%;
+    flex-grow: 1;
     z-index: 2;
-    max-width: 800px;
 }
 
 .hero h1 {
@@ -786,8 +840,36 @@ footer {
 }
 
 /* MOBILE */
+@media (max-width: 1024px) {
+    .hero-image span {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 910px) {
+    .hero-image span {
+        width: 170px;
+        height: 170px;
+    }
+}
 
 @media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 10rem;
+        max-width: 800px;
+        margin-bottom: 50px;
+    }
+
+    .hero-content, .hero-image {
+        flex-basis: 100%;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
     .social-links {
         margin-top: 1rem !important;
     }
@@ -817,5 +899,20 @@ footer {
 
     .tooltip {
         display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+    }
+
+    .hero-btns {
+        gap: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
 }
