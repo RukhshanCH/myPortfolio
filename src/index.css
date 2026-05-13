@@ -1,10 +1,10 @@
 :root {
-    --primary: #ff5e00; /* 00FFF0, rgba(0, 255, 240) */
-    --secondary: #ff9833;
-    --shadow-color1: rgba(255, 94, 0, 0.1);
-    --shadow-color2: rgba(255, 94, 0, 0.2);
-    --shadow-color3: rgba(255, 94, 0, 0.3);
-    --shadow-color5: rgba(255, 94, 0, 0.5);
+    --primary: #00FFF0; /* ff5e00, rgba(255, 94, 0) */
+    --secondary: #00BFFF; /* ff9833, rgba(255, 152, 51) */
+    --shadow-color1: rgba(0, 255, 240, 0.1);
+    --shadow-color2: rgba(0, 255, 240, 0.2);
+    --shadow-color3: rgba(0, 255, 240, 0.3);
+    --shadow-color5: rgba(0, 255, 240, 0.5);
 }
 
 * {
@@ -36,7 +36,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff7b2c;
+    background: var(--secondary);
 }
 
 /* Smooth Scroll */
@@ -110,7 +110,7 @@ html {
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #fff, #ff9f4a);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -241,7 +241,7 @@ html {
 
 .typed-text {
     font-size: clamp(1.2rem, 4vw, 1.8rem);
-    color: #ff9f4a;
+    color: var(--primary);
     margin-bottom: 1.5rem;
     min-height: 70px;
 }

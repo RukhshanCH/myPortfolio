@@ -15,17 +15,17 @@ const About = () => {
             <div className="skills-highlight">
                 <h3>Core Expertise</h3>
                 <ul style={{ marginTop: "1rem", listStyle: "none" }}>
-                    <li>⚡ Advanced CSS (Tailwind, SCSS)</li>
-                    <li>⚡ Performance Optimization</li>
-                    <li>⚡ Responsive & Mobile-first Design</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Advanced CSS (Tailwind, SCSS)</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Performance Optimization</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Responsive & Mobile-first Design</li>
                     <br />
-                    <li>⚡ Attention to detail</li>
-                    <li>⚡ Clean & maintainable code</li>
-                    <li>⚡ Time management & organization</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Attention to detail</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Clean & maintainable code</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Time management & organization</li>
                     <br />
-                    <li>⚡ Debugging & troubleshooting expertise</li>
-                    <li>⚡ Team collaboration & adaptability</li>
-                    <li>⚡ Continuous learning mindset</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Debugging & troubleshooting expertise</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Team collaboration & adaptability</li>
+                    <li><span style={{color: "var(--primary)"}}>⟡</span> Continuous learning mindset</li>
                 </ul>
             </div>
         </div>
