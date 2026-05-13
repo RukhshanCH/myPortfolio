@@ -9,38 +9,53 @@ import Services from './pages/Services';
 import Footer from './Footer';
 import FloatingContactButton from './components/ContactButton';
 import BackToTopButton from './components/BackToTopButton';
+import { useEffect, useState } from 'react';
+import Loader from './components/Loader';
 
 function App() {
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoader(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [])
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <div className="separator">
-        <span></span>
-      </div>
-      <About />
-      <div className="separator">
-        <span></span>
-      </div>
-      <Skills />
-      <div className="separator">
-        <span></span>
-      </div>
-      <Projects />
-      <div className="separator">
-        <span></span>
-      </div>
-      {/* <Experience />
-      <div className="separator">
-        <span></span>
-      </div> */}
-      <Services />
-      
-      <Footer />
+      {loader && <Loader />}
+      {!loader && (
+        <>
+          <Navbar />
+          <Hero />
+          <div className="separator">
+            <span></span>
+          </div>
+          <About />
+          <div className="separator">
+            <span></span>
+          </div>
+          <Skills />
+          <div className="separator">
+            <span></span>
+          </div>
+          <Projects />
+          <div className="separator">
+            <span></span>
+          </div>
+          {/* <Experience />
+          <div className="separator">
+            <span></span>
+          </div> */}
+          <Services />
 
-      <FloatingContactButton />
-      <BackToTopButton />
+          <Footer />
+
+          <FloatingContactButton />
+          <BackToTopButton />
+        </>
+      )}
     </>
   )
 }
