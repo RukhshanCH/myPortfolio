@@ -1,3 +1,8 @@
+:root {
+    --primary: #ff5e00;
+    --secondary: #ff9833;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff5e00;
+    background: var(--primary);
     border-radius: 10px;
 }
 
@@ -37,7 +42,7 @@ html {
 
 /* Glow Orange Accents */
 .glow-text {
-    color: #ff5e00;
+    color: var(--primary);
     text-shadow: 0 0 8px rgba(255, 94, 0, 0.5);
 }
 
@@ -54,7 +59,7 @@ html {
 }
 
 .btn-primary {
-    background: linear-gradient(95deg, #ff5e00, #ff9833);
+    background: linear-gradient(95deg, var(--primary), #ff9833);
     color: #000;
     box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
 }
@@ -66,8 +71,8 @@ html {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid #ff5e00;
-    color: #ff5e00;
+    border: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 .btn-outline:hover {
@@ -123,7 +128,7 @@ html {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #ff5e00;
+    color: var(--primary);
 }
 
 .theme-toggle {
@@ -131,7 +136,7 @@ html {
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
-    color: #ff5e00;
+    color: var(--primary);
     margin-left: 1rem;
 }
 
@@ -140,7 +145,7 @@ html {
     display: none;
     font-size: 1.8rem;
     cursor: pointer;
-    color: #ff5e00;
+    color: var(--primary);
     transition: all 0.3s ease;
 }
 
@@ -183,7 +188,7 @@ html {
     transform: translate(-50%, -50%);
     width: 270px;
     height: 270px;
-    background: linear-gradient(135deg, #ff5e00, #ff9833);
+    background: linear-gradient(135deg, var(--primary), #ff9833);
     border-radius: 50%;
     z-index: -1;
     /* filter: blur(60px); */
@@ -266,16 +271,16 @@ section {
     content: "";
     flex: 1;
     height: 1px;
-    background: #ff5e0030;
+    background: var(--primary)30;
 }
 
 .separator span {
     width: 8px;
     height: 8px;
-    background: #ff5e00;
+    background: var(--primary);
     border-radius: 50%;
     margin: 0 12px;
-    box-shadow: 0 0 8px #ff5e00;
+    box-shadow: 0 0 8px var(--primary);
 }
 
 .section-title {
@@ -291,7 +296,7 @@ section {
     display: block;
     width: 70px;
     height: 4px;
-    background: #ff5e00;
+    background: var(--primary);
     margin: 0.8rem auto 0;
     border-radius: 4px;
 }
@@ -321,7 +326,7 @@ section {
 .exp-number {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #ff5e00;
+    color: var(--primary);
 }
 
 /* Skills Cards */
@@ -348,13 +353,13 @@ section {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    border-color: #ff5e00;
+    border-color: var(--primary);
     box-shadow: 0 10px 25px rgba(255, 94, 0, 0.2);
 }
 
 .skill-icon {
     font-size: 2.5rem;
-    color: #ff5e00;
+    color: var(--primary);
     margin-bottom: 0.8rem;
 }
 
@@ -402,7 +407,7 @@ section {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
-    border-color: #ff5e00;
+    border-color: var(--primary);
 }
 
 .project-img {
@@ -412,7 +417,7 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    color: #ff5e00;
+    color: var(--primary);
 }
 
 .project-img img {
@@ -451,7 +456,7 @@ section {
 }
 
 .project-links a {
-    color: #ff5e00;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
 }
@@ -466,7 +471,7 @@ section {
 .timeline-item {
     padding: 1.5rem 2rem;
     background: #0d0d0d;
-    border-left: 4px solid #ff5e00;
+    border-left: 4px solid var(--primary);
     margin-bottom: 2rem;
     border-radius: 12px;
     transition: transform 0.3s;
@@ -477,7 +482,7 @@ section {
 }
 
 .timeline-date {
-    color: #ff5e00;
+    color: var(--primary);
     font-weight: 700;
 }
 
@@ -499,7 +504,7 @@ section {
 
 .service-card .service-icon {
     font-size: 2.5rem;
-    color: #ff5e00;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
@@ -525,7 +530,7 @@ section {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #ff5e00;
+    border-color: var(--primary);
 }
 
 .social-links {
@@ -541,7 +546,7 @@ section {
 }
 
 .social-links a:hover {
-    color: #ff5e00;
+    color: var(--primary);
 }
 
 /* Back to Top */
@@ -549,7 +554,7 @@ section {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    background: #ff5e00;
+    background: var(--primary);
     width: 45px;
     height: 45px;
     border-radius: 50%;

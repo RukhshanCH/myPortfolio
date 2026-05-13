@@ -47,7 +47,7 @@ const StyledWrapper = styled.div`
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
-    background: linear-gradient(95deg, #ff5e00, #ff9833);
+    background: linear-gradient(95deg, var(--primary), #ff9833);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
     align-items: center;

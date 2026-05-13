@@ -49,7 +49,7 @@ const TypingEffect: React.FC = () => {
       {text}
       <span
         style={{
-          // borderRight: "2px solid #ff5e00",
+          // borderRight: "2px solid var(--primary)",
           marginLeft: "2px",
           animation: "blink 0.8s infinite",
         }}

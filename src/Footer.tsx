@@ -8,7 +8,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container" style={{display: "flex", justifyContent: "space-around", alignItems: "center", flexWrap: "wrap", padding: "0 2rem"}}>
                 <p>
-                    © <span>{year}</span> Rukhshan Shahid | Crafted with <span style={{ color: '#ff5e00' }}> React</span>
+                    © <span>{year}</span> Rukhshan Shahid | Crafted with <span style={{ color: 'var(--primary)' }}> React</span>
                 </p>
                 <div className="social-links" style={{margin: "0"}}>
                     <a href="https://github.com/RukhshanCH/" target="_blank" rel="noopener noreferrer">

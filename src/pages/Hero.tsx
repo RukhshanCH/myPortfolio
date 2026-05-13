@@ -27,7 +27,7 @@ const Hero = () => {
                     <img src={heroImg} alt="Hero" />
                 </div>
                 <div className="hero-content">
-                    <h1>Rukhshan <span style={{ color: "#ff5e00" }}>Shahid</span></h1>
+                    <h1>Rukhshan <span style={{ color: "var(--primary)" }}>Shahid</span></h1>
                     <div className="typed-text" id="typedElement">
                         <TypingEffect />
                     </div>

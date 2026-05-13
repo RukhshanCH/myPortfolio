@@ -88,7 +88,7 @@ const HeroCanvas: React.FC = () => {
           }
         }
 
-        ctx.strokeStyle = "#ff5e00";
+        ctx.strokeStyle = "var(--primary)";
         ctx.lineWidth = 3;
         ctx.stroke();
       }

@@ -26,7 +26,7 @@ const Contact = () => {
                         Send Message
                     </button>
                     <p id="formStatus" style={{ marginTop: '0.8rem', fontSize: '0.9rem' }}>
-                        <span style={{color: '#ff5e00'}}>{status}</span>
+                        <span style={{color: 'var(--primary)'}}>{status}</span>
                     </p>
                 </form>
                 <div>

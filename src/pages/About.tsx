@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section id="about" className="fade-up">
-        <h2 className="section-title">About <span style={{color: "#ff5e00"}}>Rukhshan</span></h2>
+        <h2 className="section-title">About <span style={{color: "var(--primary)"}}>Rukhshan</span></h2>
         <div className="about-grid">
             <div className="about-text">
                 <p>I'm a passionate Frontend Developer with over 2 years of experience crafting intuitive, blazing-fast web applications. I specialize in React, modern JavaScript, and Django integrations.</p>
