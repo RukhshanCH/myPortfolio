@@ -11,6 +11,7 @@ import FloatingContactButton from './components/ContactButton';
 import BackToTopButton from './components/BackToTopButton';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
+import Separator from './components/Separator';
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -28,26 +29,23 @@ function App() {
       {!loader && (
         <>
           <Navbar />
+
           <Hero />
-          <div className="separator">
-            <span></span>
-          </div>
+          <Separator />
+
           <About />
-          <div className="separator">
-            <span></span>
-          </div>
+          <Separator />
+
           <Skills />
-          <div className="separator">
-            <span></span>
-          </div>
+          <Separator />
+
           <Projects />
-          <div className="separator">
-            <span></span>
-          </div>
+          <Separator />
+
           {/* <Experience />
-          <div className="separator">
-            <span></span>
-          </div> */}
+          <Separator />
+           */}
+          
           <Services />
 
           <Footer />
