@@ -11,8 +11,7 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        document.body.style.backgroundColor = isDark ? "#000" : "#f5f5f5";
-        document.body.style.color = isDark ? "#e0e0e0" : "#111";
+        !isDark ? document.body.classList.add('light') : document.body.classList.remove('light');
 
         const menuIcon = document.getElementById('menuIcon');
         const navLinksMenu = document.getElementById('navLinks');
