@@ -15,20 +15,22 @@ export default function FloatingContactButton() {
 
     // CLOSE ON OUTSIDE CLICK
     useEffect(() => {
+        const rotate = document.getElementById("rotate");
 
-        if (open) return;
+        let interval: number;
 
-        const interval = setInterval(() => {
-            const rotate = document.getElementById("rotate");
+        // RUN ANIMATION ONLY WHEN CLOSED
+        if (!open) {
+            interval = setInterval(() => {
+                rotate?.classList.remove("rotate");
 
-            rotate?.classList.remove("rotate");
+                void rotate?.offsetWidth;
 
-            void rotate?.offsetWidth;
+                rotate?.classList.add("rotate");
+            }, 7000);
+        }
 
-            rotate?.classList.add("rotate");
-
-        }, 7000);
-
+        // CLOSE ON OUTSIDE CLICK
         function handleClickOutside(event: MouseEvent) {
             if (
                 containerRef.current &&
@@ -44,8 +46,9 @@ export default function FloatingContactButton() {
             document.removeEventListener(
                 "mousedown",
                 handleClickOutside
-            ),
-            clearInterval(interval)
+            );
+
+            if (interval) clearInterval(interval);
         };
     }, [open]);
 

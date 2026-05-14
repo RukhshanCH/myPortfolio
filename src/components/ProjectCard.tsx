@@ -39,7 +39,7 @@ const ProjectCard = ({
         <div className="project-links">
           {githubLink && (
             <a
-              href={`https://github.com/RukhshanCH/${githubLink}`}
+              href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
             >
