@@ -16,7 +16,7 @@ const Hero = () => {
                 mouseInfluence={0.1}
                 noiseAmount={0}
                 distortion={0}
-                className="custom-rays"
+                className="custom-rays fade-up"
                 pulsating={false}
                 fadeDistance={1}
                 saturation={1}

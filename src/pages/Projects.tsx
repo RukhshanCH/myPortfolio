@@ -38,15 +38,7 @@ const Projects = () => {
             img: " ",
             title: "NewsMonkey",
             description: "A modern news aggregation app with real-time updates.",
-            techStack: ["React", "Node.js", "NewsAPI"],
-            githubLink: "https://github.com/RukhshanCH/NewsMonkey",
-            demoLink: "https://newsmonkey.netlify.app/"
-        },
-        {
-            img: " ",
-            title: "NewsMonkey",
-            description: "A modern news aggregation app with real-time updates.",
-            techStack: ["React", "Node.js", "NewsAPI"],
+            techStack: ["React", "Bootstrap", "NewsAPI"],
             githubLink: "https://github.com/RukhshanCH/NewsMonkey",
             demoLink: "https://newsmonkey.netlify.app/"
         },
@@ -56,7 +48,7 @@ const Projects = () => {
             description: "A simple tax calculation app for determining income tax liability.",
             techStack: ["HTML", "CSS", "JavaScript", "Python"],
             githubLink: "https://github.com/RukhshanCH/Tax-Calculator",
-            demoLink: "https://tax-calculator.netlify.app/"
+            demoLink: "https://tax-calcuator.netlify.app/"
         },
         {
             img: " ",
@@ -65,6 +57,14 @@ const Projects = () => {
             techStack: ["HTML", "CSS", "JavaScript"],
             githubLink: "https://github.com/RukhshanCH/To-Do-List-App",
             demoLink: "https://todo-list-app.netlify.app/"
+        },
+        {
+            img: " ",
+            title: "Textutils",
+            description: "A text utility app for performing various text transformations and analyses.",
+            techStack: ["React", "Bootstrap"],
+            githubLink: "https://github.com/RukhshanCH/Textutils",
+            demoLink: "https://textutils.netlify.app/"
         },
     ];
     return (
