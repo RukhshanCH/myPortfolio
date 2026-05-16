@@ -151,6 +151,7 @@ export default function FloatingContactButton() {
                 className={`main-btn ${open ? "active" : ""}`}
                 onClick={() => setOpen(!open)}
                 whileTap={{ scale: 0.92 }}
+                whileHover={{ translateY: '-5px' }}
                 animate={{
                     rotate: open ? 135 : 0,
                 }}
