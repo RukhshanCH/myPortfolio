@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://myportfolio-rukhshanshahid.netlify.app/sitemap.xml
