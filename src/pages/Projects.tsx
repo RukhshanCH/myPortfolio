@@ -12,18 +12,26 @@ const Projects = () => {
         },
         {
             img: " ",
+            title: "NewsMonkey",
+            description: "A modern news aggregation app with real-time updates.",
+            techStack: ["React", "Bootstrap", "NewsAPI"],
+            githubLink: "https://github.com/RukhshanCH/NewsMonkey",
+            demoLink: "https://newsmonkey-n.netlify.app/"
+        },
+        {
+            img: " ",
             title: "AI Face Styler",
             description: "An AI-powered tool that applies artistic styles to facial images in real-time.",
             techStack: ["Flask", "TensorFlow", "OpenCV"],
             githubLink: "https://github.com/RukhshanCH/AI-Face-Styler",
-            demoLink: " "
+            demoLink: "https://ai-face-styler-production.up.railway.app"
         },
         {
             img: " ",
             title: "DotTechHub",
             description: "Software House Website with Services and Courses offered.",
             techStack: ["HTML", "SCSS", "JQuery"],
-            githubLink: "https://github.com/RukhshanCH/DotTechHub",
+            githubLink: "https://github.com/RukhshanCH/dotTechHub",
             demoLink: "https://dotteckhub.com/"
         },
         {
@@ -36,18 +44,10 @@ const Projects = () => {
         },
         {
             img: " ",
-            title: "NewsMonkey",
-            description: "A modern news aggregation app with real-time updates.",
-            techStack: ["React", "Bootstrap", "NewsAPI"],
-            githubLink: "https://github.com/RukhshanCH/NewsMonkey",
-            demoLink: "https://newsmonkey.netlify.app/"
-        },
-        {
-            img: " ",
             title: "Tax Calculator",
             description: "A simple tax calculation app for determining income tax liability.",
             techStack: ["HTML", "CSS", "JavaScript", "Python"],
-            githubLink: "https://github.com/RukhshanCH/Tax-Calculator",
+            githubLink: "https://github.com/ZohaibSattarDataAI/Full-Stack-Web-Development-Real-World-Projects/tree/main/tax_calculator",
             demoLink: "https://tax-calcuator.netlify.app/"
         },
         {
@@ -55,8 +55,8 @@ const Projects = () => {
             title: "To-do List App",
             description: "A simple to-do list app with task management features.",
             techStack: ["HTML", "CSS", "JavaScript"],
-            githubLink: "https://github.com/RukhshanCH/To-Do-List-App",
-            demoLink: "https://todo-list-app.netlify.app/"
+            githubLink: "https://github.com/ZohaibSattarDataAI/Full-Stack-Web-Development-Real-World-Projects/tree/main/to%20do%20list/lumina",
+            demoLink: ""
         },
         {
             img: " ",
