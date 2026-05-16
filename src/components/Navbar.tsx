@@ -18,6 +18,8 @@ const Navbar = () => {
             document.documentElement.style.setProperty("--shadow-color2", "rgba(255, 152, 51, 0.2)");
             document.documentElement.style.setProperty("--shadow-color3", "rgba(255, 152, 51, 0.3)");
             document.documentElement.style.setProperty("--shadow-color5", "rgba(255, 152, 51, 0.5)");
+
+            document.documentElement.style.setProperty("--background", "#2b0707");
         } else {
             document.body.classList.remove('light');
             document.documentElement.style.removeProperty("--primary");
@@ -27,6 +29,8 @@ const Navbar = () => {
             document.documentElement.style.removeProperty("--shadow-color2");
             document.documentElement.style.removeProperty("--shadow-color3");
             document.documentElement.style.removeProperty("--shadow-color5");
+
+            document.documentElement.style.removeProperty("--background");
         }
     };
 

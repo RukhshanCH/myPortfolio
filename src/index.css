@@ -1,10 +1,12 @@
 :root {
-    --primary: #00FFF0; /* ff5e00, rgba(255, 94, 0) */
+    --primary: #00FFF0; /* ff5e00, rgba(255, 94, 0)  010133  2b0707 */
     --secondary: #00BFFF; /* ff9833, rgba(255, 152, 51) */
     --shadow-color1: rgba(0, 255, 240, 0.1);
     --shadow-color2: rgba(0, 255, 240, 0.2);
     --shadow-color3: rgba(0, 255, 240, 0.3);
     --shadow-color5: rgba(0, 255, 240, 0.5);
+
+    --background: #010133
 }
 
 * {
@@ -16,6 +18,8 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #000000;
+    background: radial-gradient(125% 125% at 50% 10%, #000000 40%, var(--background) 100%);
+    background-attachment: fixed;
     color: #e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
