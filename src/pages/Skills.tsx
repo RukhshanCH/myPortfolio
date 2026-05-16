@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHtml5,
@@ -14,7 +15,7 @@ import {
 
 const Skills = () => {
 
-    const skills = [
+    const skills = useMemo(() => [
         { name: 'HTML5', icon: faHtml5 },
         { name: 'CSS3', icon: faCss3Alt },
         { name: 'TypeScript', icon: faTypescript },
@@ -25,13 +26,16 @@ const Skills = () => {
         { name: 'Node.js', icon: faNodeJs },
         { name: 'Git', icon: faGitAlt },
         { name: 'GitHub', icon: faGithub }
-    ]
+    ],[])
     
-    const doubled = [...skills, ...skills];
+    const doubled = useMemo(() => {
+        return [...skills, ...skills];
+    }, [skills]);
 
     return (
-        <section id="skills" style={{margin: "0", maxWidth: "100%"}} className="marquee-wrap fade-up">
+        <section id="skills" style={{ margin: "0", maxWidth: "100%" }} className="marquee-wrap fade-up">
             <h2 className="section-title">Tech Stack</h2>
+
             <div className="marquee-inner">
                 {doubled.map((skill, index) => (
                     <div className="skill-card" key={index}>
