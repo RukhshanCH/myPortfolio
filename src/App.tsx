@@ -11,8 +11,10 @@ import BackToTopButton from './components/BackToTopButton';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Separator from './components/Separator';
+import useLenis from './components/useLenis';
 
 function App() {
+  useLenis()
   const [loader, setLoader] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
