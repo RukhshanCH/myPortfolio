@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-image">
                     <span></span>
-                    <img src={heroImg} alt="Hero" />
+                    <img fetchPriority="high" src={heroImg} alt="Hero" />
                 </div>
                 <div className="hero-content">
                     <h1>Rukhshan <span style={{ color: "var(--primary)" }}>Shahid</span></h1>

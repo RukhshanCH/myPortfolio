@@ -17,12 +17,12 @@ const About = () => {
                 <ul style={{ marginTop: "1rem", listStyle: "none" }}>
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Advanced CSS (Tailwind, SCSS)</li>
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Performance Optimization</li>
-                    <li><span style={{color: "var(--primary)"}}>⟡</span> Responsive & Mobile-first Design</li>
-                    <br />
+                    <li style={{marginBottom: "1rem"}}><span style={{color: "var(--primary)"}}>⟡</span> Responsive & Mobile-first Design</li>
+                    
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Attention to detail</li>
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Clean & maintainable code</li>
-                    <li><span style={{color: "var(--primary)"}}>⟡</span> Time management & organization</li>
-                    <br />
+                    <li style={{marginBottom: "1rem"}}><span style={{color: "var(--primary)"}}>⟡</span> Time management & organization</li>
+                    
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Debugging & troubleshooting expertise</li>
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Team collaboration & adaptability</li>
                     <li><span style={{color: "var(--primary)"}}>⟡</span> Continuous learning mindset</li>

@@ -4,7 +4,6 @@ import About from './pages/About'
 import Hero from './pages/Hero'
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
-// import Experience from './pages/Experience';
 import Services from './pages/Services';
 import Footer from './Footer';
 import FloatingContactButton from './components/ContactButton';
@@ -18,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
-    }, 5000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, [])
@@ -30,23 +29,21 @@ function App() {
         <>
           <Navbar />
 
-          <Hero />
-          <Separator />
+          <main>
+            <Hero />
+            <Separator />
 
-          <About />
-          <Separator />
+            <About />
+            <Separator />
 
-          <Skills />
-          <Separator />
+            <Skills />
+            <Separator />
 
-          <Projects />
-          <Separator />
-
-          {/* <Experience />
-          <Separator />
-           */}
-          
-          <Services />
+            <Projects />
+            <Separator />
+            
+            <Services />
+          </main>
 
           <Footer />
 

@@ -60,10 +60,9 @@ const Navbar = () => {
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    {/* <li><a href="#experience">Experience</a></li> */}
                     <li><a href="#services">Services</a></li>
                 </ul>
-                <button id="themeToggle" className="theme-toggle" onClick={handleThemeToggle}>
+                <button id="themeToggle" aria-label={isDark? "Switch to Dark" : "Switch to Light"} className="theme-toggle" onClick={handleThemeToggle}>
                     {isDark ? (
                         <FontAwesomeIcon icon={faSun} />
                     ) : (
