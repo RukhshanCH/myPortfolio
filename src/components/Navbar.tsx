@@ -49,9 +49,9 @@ const Navbar = () => {
     return (
         <nav className="navbar" id="navbar">
             <div className="nav-container">
-                <div className="logo">
+                <a href="#home" className="logo" style={{textDecoration: "none"}}>
                     RS.
-                </div>
+                </a>
                 <div className="menu-icon" id="menuIcon">
                     <FontAwesomeIcon icon={faBars} />
                 </div>
