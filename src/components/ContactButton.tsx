@@ -206,6 +206,7 @@ export default function FloatingContactButton() {
                             }}
                         >
                             <img
+                                fetchPriority="high"
                                 src={ContactIcon}
                                 height={54}
                                 width={54}
