@@ -27,6 +27,14 @@ const Projects = () => {
             demoLink: "https://ai-face-styler-production.up.railway.app"
         },
         {
+            img: "https://raw.githubusercontent.com/mhanzlah/climate-change-semester-project/main/preview.png",
+            title: "AIClimateEffect",
+            description: "A web application that predicts climate change impacts using AI models.",
+            techStack: ["React", "FastApi"],
+            githubLink: "https://github.com/mhanzlah/climate-change-semester-project",
+            demoLink: "https://ai-climate-effect.vercel.app/"
+        },
+        {
             img: " ",
             title: "DotTechHub",
             description: "Software House Website with Services and Courses offered.",
@@ -41,6 +49,14 @@ const Projects = () => {
             techStack: ["HTML", "CSS", "JavaScript"],
             githubLink: "https://github.com/RukhshanCH/E-commerce-frontend-design",
             demoLink: "https://e-commerce-website-2025.netlify.app/"
+        },
+        {
+            img: " ",
+            title: "Interest Calculator",
+            description: "A simple interest calculator app with real-time updates and chart visualization.",
+            techStack: ["Typescript", "Next.js"],
+            githubLink: "https://github.com/RukhshanCH/Interest-calculator/",
+            demoLink: "https://interest-calculator-three-omega.vercel.app/"
         },
         {
             img: " ",
