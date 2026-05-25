@@ -24,7 +24,7 @@ const Projects = () => {
             description: "An AI-powered tool that applies artistic styles to facial images in real-time.",
             techStack: ["Flask", "TensorFlow", "OpenCV"],
             githubLink: "https://github.com/RukhshanCH/AI-Face-Styler",
-            demoLink: "https://ai-face-styler-production.up.railway.app"
+            demoLink: "http://161.118.181.213:8080/"
         },
         {
             img: "https://raw.githubusercontent.com/mhanzlah/climate-change-semester-project/main/preview.png",
