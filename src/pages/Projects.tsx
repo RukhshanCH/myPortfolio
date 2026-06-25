@@ -4,6 +4,14 @@ const Projects = () => {
     const data = [
         {
             img: " ",
+            title: "Roznamcha",
+            description: "A daily accounting system with real-time updates.",
+            techStack: ["React", "IndexexDb"],
+            githubLink: "",
+            demoLink: "https://roznamcha-eta.vercel.app/"
+        },
+        {
+            img: " ",
             title: "iNotebook",
             description: "A simple note-taking app with real-time synchronization.",
             techStack: ["React", "Node.js", "MongoDB"],

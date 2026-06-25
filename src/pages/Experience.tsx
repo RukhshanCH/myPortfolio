@@ -3,20 +3,50 @@ import ExperienceCard from "../components/ExperienceCard"
 const Experience = () => {
     const data = [
         {
-            date: "2020 - 2021",
-            title: "Senior Frontend Developer @ TechCorp",
+            date: "Jun 2024 - Present",
+            title: <>
+                React Developer @{" "}
+                <a
+                    href="https://dotteckhub.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--primary)", textDecoration: "none" }}
+                >
+                    DotTechHub
+                </a>
+            </>,
             description: "Leading frontend architecture for enterprise SaaS, mentoring juniors, optimizing performance by 40%."
         },
         {
-            date: "2019 - 2022",
-            title: "React Developer @ InnovateLabs",
-            description: "Built scalable SPAs, integrated headless CMS, improved user engagement by 35%."
+            date: "Jul 2025 - Aug 2025",
+            title: <>
+                Web Developer Intern @{" "}
+                <a
+                    href="https://developershubcorp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--primary)", textDecoration: "none" }}
+                >
+                    DevelopersHub Corporation
+                </a>
+            </>,
+            description: "Developed E-commerce Website Frontend."
         },
         {
-            date: "2016 - 2019",
-            title: "Junior Web Developer @ StudioNex",
-            description: "Developed responsive websites and collaborated on custom WordPress themes."
-        }
+            date: "May 2025 - Jul 2025",
+            title: <>
+                Web Developer Intern @{" "}
+                <a
+                    href="https://www.codealpha.tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--primary)", textDecoration: "none" }}
+                >
+                    Code Alpha
+                </a>
+            </>,
+            description: "Built Beginners friendly websites like Image-Gallery, Music Player and more."
+        },
     ];
 
     return (

@@ -1,6 +1,8 @@
+import type { JSX } from "react";
+
 interface ExperienceCardProps {
     date: string;
-    title: string;
+    title: JSX.Element;
     description: string;
 }
 

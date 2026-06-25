@@ -3,7 +3,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectCardProps {
-  img : string;  
+  img: string;
   title: string;
   description: string;
   techStack: string[];
@@ -37,15 +37,13 @@ const ProjectCard = ({
         <p>{description}</p>
 
         <div className="project-links">
-          {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} /> Code
-            </a>
-          )}
+          <a
+            href={githubLink}
+            target={!githubLink ? "_self" : "_blank"}
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> {!githubLink ? "Private Repo" : "Code"}
+          </a>
 
           {demoLink && (
             <a

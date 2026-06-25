@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Separator from './components/Separator';
 import useLenis from './components/useLenis';
+import Experience from './pages/Experience';
 
 function App() {
   useLenis()
@@ -42,6 +43,9 @@ function App() {
             <Separator />
 
             <Projects />
+            <Separator />
+
+            <Experience />
             <Separator />
             
             <Services />
