@@ -1,7 +1,7 @@
 import TypingEffect from "../components/TypingEffect"
 import LightRays from '../ReactBitComponents/LightRays'
 import CV from "../assets/CV.pdf"
-import heroImg from "../assets/RukhshanShahid.webp"
+import heroImg from "../assets/1.webp"
 
 const Hero = () => {
     return (
