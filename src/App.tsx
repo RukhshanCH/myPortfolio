@@ -13,10 +13,13 @@ import Loader from './components/Loader';
 import Separator from './components/Separator';
 import useLenis from './components/useLenis';
 import Experience from './pages/Experience';
+import Cursor from './components/Cursor';
 
 function App() {
   useLenis()
+
   const [loader, setLoader] = useState(true);
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
@@ -27,6 +30,7 @@ function App() {
 
   return (
     <>
+      <Cursor />
       {loader && <Loader />}
       {!loader && (
         <>
@@ -47,7 +51,7 @@ function App() {
 
             <Experience />
             <Separator />
-            
+
             <Services />
           </main>
 

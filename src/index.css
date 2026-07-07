@@ -45,6 +45,22 @@ body {
     background: var(--secondary);
 }
 
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none !important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
