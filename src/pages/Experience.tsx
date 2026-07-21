@@ -3,7 +3,22 @@ import ExperienceCard from "../components/ExperienceCard"
 const Experience = () => {
     const data = [
         {
-            date: "Jun 2024 - Present",
+            date: "Jul 2026 - Present",
+            title: <>
+                Web Developer Intern @{" "}
+                <a
+                    href="https://v-productions-web.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--primary)", textDecoration: "none" }}
+                >
+                    V-Productions & Marketing
+                </a>
+            </>,
+            description: "A digital business and training company delivering solutions in digital marketing, AI automation, web development, creative services, and practical skill development."
+        },
+        {
+            date: "Jun 2024 - Jul 2025",
             title: <>
                 React Developer @{" "}
                 <a

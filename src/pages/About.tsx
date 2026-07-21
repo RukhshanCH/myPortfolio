@@ -4,10 +4,10 @@ const About = () => {
         <h2 className="section-title">About <span style={{color: "var(--primary)"}}>Rukhshan</span></h2>
         <div className="about-grid">
             <div className="about-text">
-                <p>I'm a passionate Frontend Developer with over 2 years of experience crafting intuitive, blazing-fast web applications. I specialize in React, modern JavaScript, and Django integrations.</p>
+                <p>I'm a passionate Web Developer with over 2 years of experience crafting intuitive, blazing-fast web applications. I specialize in React, modern JavaScript, and Django integrations.</p>
                 <p>My approach combines clean UI/UX with performance optimization, ensuring every project is both stunning and functional. I've helped startups and enterprises scale their web presence.</p>
                 <div className="exp-highlight">
-                    <div className="exp-item"><div className="exp-number">5+</div><div>Projects</div></div>
+                    <div className="exp-item"><div className="exp-number">10+</div><div>Projects</div></div>
                     <div className="exp-item"><div className="exp-number">2+</div><div>Years Exp</div></div>
                     {/* <div className="exp-item"><div className="exp-number">30+</div><div>Clients</div></div> */}
                 </div>

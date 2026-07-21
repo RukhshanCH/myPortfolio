@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const roles = [
-  "Frontend Developer",
+  "Web Developer",
   "UI/UX Architect",
   "React Expert",
   "Performance Geek",

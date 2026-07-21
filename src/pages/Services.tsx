@@ -16,9 +16,9 @@ const Services = () => {
     const services = [
         {
             icon: faCode,
-            title: "Frontend Web Development",
+            title: "Web Development",
             description:
-                "Build modern, scalable, and responsive web applications using React, TypeScript, and JavaScript.",
+                "Build modern, scalable, and responsive web applications using MERN Stack with TypeScript.",
         },
         {
             icon: faMobileAlt,

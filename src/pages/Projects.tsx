@@ -4,6 +4,14 @@ const Projects = () => {
     const data = [
         {
             img: " ",
+            title: "CMS Porfolio",
+            description: "A content management system for a portfolio website.",
+            techStack: ["MERN Stack"],
+            githubLink: "https://github.com/RukhshanCH/CMS-Portfolio",
+            demoLink: "https://cms-portfolio-rho.vercel.app/"
+        },
+        {
+            img: " ",
             title: "Roznamcha",
             description: "A daily accounting system with real-time updates.",
             techStack: ["React", "IndexexDb"],
@@ -88,7 +96,7 @@ const Projects = () => {
             description: "A text utility app for performing various text transformations and analyses.",
             techStack: ["React", "Bootstrap"],
             githubLink: "https://github.com/RukhshanCH/Textutils",
-            demoLink: "https://textutils.netlify.app/"
+            demoLink: "https://textutillsz.netlify.app/"
         },
     ];
     return (

@@ -19,7 +19,7 @@ function App() {
   useLenis()
 
   const [loader, setLoader] = useState(true);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoader(false);
@@ -35,7 +35,6 @@ function App() {
       {!loader && (
         <>
           <Navbar />
-
           <main>
             <Hero />
             <Separator />
@@ -54,7 +53,6 @@ function App() {
 
             <Services />
           </main>
-
           <Footer />
 
           <FloatingContactButton />
