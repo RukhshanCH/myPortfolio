@@ -67,7 +67,7 @@ export default function FloatingContactButton() {
         },
         {
             icon: <FaEnvelope />,
-            link: "https://mail.google.com/mail/?view=cm&fs=1&to=ch.rukhshan@gmail.com&su=Hello&body=Enter%20your%20message%20here",
+            link: "https://mail.google.com/mail/?view=cm&fs=1&to=rukhshanshahid.work@gmail.com&su=Hello&body=Enter%20your%20message%20here",
             className: "email",
             label: "Email",
         },

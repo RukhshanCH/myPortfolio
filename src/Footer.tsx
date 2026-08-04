@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href="https://wa.me/923000941566?text=Hi%20Rukhshan,%20I%20want%20to%20discuss%20a%20project." aria-label="Chat on Whatsapp (opens in new tab)" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon aria-hidden="true" icon={faWhatsapp} />
                     </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ch.rukhshan@gmail.com&su=Hello&body=Enter%20your%20message%20here" aria-label="Send email (opens Gmail)" target="_blank" rel="noopener noreferrer">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rukhshanshahid.work@gmail.com&su=Hello&body=Enter%20your%20message%20here" aria-label="Send email (opens Gmail)" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon aria-hidden="true" icon={faEnvelope} />
                     </a>
                 </div>

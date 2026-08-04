@@ -1,0 +1,47 @@
+/* ============================================
+   LOADING SCREEN
+   ============================================ */
+
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    background: radial-gradient(125% 125% at 50% 10%, #000000 40%, var(--background) 100%);
+    background-attachment: fixed;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-logo {
+    font-family: 'Playfair Display', Georgia, serif;;
+    font-size: 3.5rem;
+    font-weight: 700;
+    /* color: var(--primary); */
+    animation: loadingPulse 1.5s infinite;
+}
+
+@keyframes loadingPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.loading-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}

@@ -4,9 +4,17 @@ const Projects = () => {
     const data = [
         {
             img: " ",
+            title: "V-Productions & Marketing",
+            description: "A digital business and training company delivering solutions in various fields.",
+            techStack: ["Next", "TypeScript", "Supabase"],
+            githubLink: "",
+            demoLink: "https://v-marketing-lahore.vercel.app/"
+        },
+        {
+            img: " ",
             title: "CMS Porfolio",
-            description: "A content management system for a portfolio website.",
-            techStack: ["MERN Stack"],
+            description: "A full-stack content management system for a portfolio website.",
+            techStack: ["React", "TypeScript", "Supabase", "Node.js"],
             githubLink: "https://github.com/RukhshanCH/CMS-Portfolio",
             demoLink: "https://cms-portfolio-rho.vercel.app/"
         },
@@ -73,22 +81,6 @@ const Projects = () => {
             techStack: ["Typescript", "Next.js"],
             githubLink: "https://github.com/RukhshanCH/Interest-calculator/",
             demoLink: "https://interest-calculator-three-omega.vercel.app/"
-        },
-        {
-            img: " ",
-            title: "Tax Calculator",
-            description: "A simple tax calculation app for determining income tax liability.",
-            techStack: ["HTML", "CSS", "JavaScript", "Python"],
-            githubLink: "https://github.com/ZohaibSattarDataAI/Full-Stack-Web-Development-Real-World-Projects/tree/main/tax_calculator",
-            demoLink: "https://tax-calcuator.netlify.app/"
-        },
-        {
-            img: " ",
-            title: "To-do List App",
-            description: "A simple to-do list app with task management features.",
-            techStack: ["HTML", "CSS", "JavaScript"],
-            githubLink: "https://github.com/ZohaibSattarDataAI/Full-Stack-Web-Development-Real-World-Projects/tree/main/to%20do%20list/lumina",
-            demoLink: ""
         },
         {
             img: " ",
