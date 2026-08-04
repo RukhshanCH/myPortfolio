@@ -1,6 +1,6 @@
 import TypingEffect from "../components/TypingEffect"
 import LightRays from '../ReactBitComponents/LightRays'
-import CV from "../assets/CV.pdf"
+import resume from "../assets/Resume.pdf"
 import heroImg from "../assets/1.webp"
 
 const Hero = () => {
@@ -33,7 +33,7 @@ const Hero = () => {
                     </div>
                     <p style={{ fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>Crafting high-performance, modern web experiences with passion and precision. 2+ years of turning ideas into digital excellence.</p>
                     <div className="hero-btns">
-                        <a href={CV} download="resume.pdf" className="btn btn-outline">Download Resume</a>
+                        <a href={resume} download="resume.pdf" className="btn btn-outline">Download Resume</a>
                         <a href="#projects" className="btn btn-primary">View Projects</a>
                     </div>
                 </div>
