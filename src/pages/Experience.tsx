@@ -1,4 +1,5 @@
 import ExperienceCard from "../components/ExperienceCard"
+import RevealSection from "../components/RevealSection"
 
 const Experience = () => {
     const data = [
@@ -65,7 +66,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="fade-up">
+        <RevealSection id="experience">
             <h2 className="section-title">Experience Journey</h2>
             <div className="timeline">
                 {data.map((item, index) => (
@@ -75,7 +76,7 @@ const Experience = () => {
                     />
                 ))}
             </div>
-        </section>
+        </RevealSection>
     )
 }
 

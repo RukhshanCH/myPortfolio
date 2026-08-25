@@ -6,7 +6,6 @@ const usePortfolioInteractions = () => {
   useEffect(() => {
     const sections = document.querySelectorAll<HTMLElement>("section");
     const navLinks = document.querySelectorAll<HTMLAnchorElement>(".nav-links a");
-    const fadeElements = document.querySelectorAll<HTMLElement>(".fade-up");
 
     // ================= ACTIVE SECTION =================
     const updateActiveSection = () => {
@@ -28,20 +27,6 @@ const usePortfolioInteractions = () => {
         }
       });
     };
-
-    // ================= INTERSECTION OBSERVER =================
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    fadeElements.forEach((el) => observer.observe(el));
 
     // ================= SCROLL EVENT =================
     const handleScroll = () => {
@@ -79,7 +64,6 @@ const usePortfolioInteractions = () => {
         handleScrollTop
       );
 
-      observer.disconnect();
     };
   }, []);
 

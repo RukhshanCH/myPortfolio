@@ -19,6 +19,7 @@ import {
     SiTypescript,
     SiZapier,
 } from "react-icons/si";
+import RevealSection from "../components/RevealSection";
 
 type Skill = {
     name: string;
@@ -62,7 +63,7 @@ const Skills = () => {
     );
 
     return (
-        <section id="skills" style={{ margin: "0 auto" }} className="fade-up">
+        <RevealSection id="skills" style={{ margin: "0 auto" }}>
             <h2 className="section-title">Tech Stack</h2>
             <div className="skills-filters">
                 {categories.map((category) => (
@@ -84,7 +85,7 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </RevealSection>
     );
 };
 

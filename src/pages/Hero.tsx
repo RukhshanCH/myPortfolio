@@ -2,25 +2,32 @@ import TypingEffect from "../components/TypingEffect"
 import LightRays from '../ReactBitComponents/LightRays'
 import resume from "../assets/Resume.pdf"
 import heroImg from "../assets/1.webp"
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
         <section id="home" className="hero" style={{ position: 'relative', overflow: 'hidden', zIndex: 1 }}>
-            <LightRays
-                raysOrigin="top-center"
-                raysColor="#ffffff"
-                raysSpeed={1}
-                lightSpread={0.5}
-                rayLength={3}
-                followMouse={true}
-                mouseInfluence={0.1}
-                noiseAmount={0}
-                distortion={0}
-                className="custom-rays fade-up"
-                pulsating={false}
-                fadeDistance={1}
-                saturation={1}
-            />
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+                <LightRays
+                    raysOrigin="top-center"
+                    raysColor="#ffffff"
+                    raysSpeed={1}
+                    lightSpread={0.5}
+                    rayLength={3}
+                    followMouse={true}
+                    mouseInfluence={0.1}
+                    noiseAmount={0}
+                    distortion={0}
+                    className="custom-rays"
+                    pulsating={false}
+                    fadeDistance={1}
+                    saturation={1}
+                />
+            </motion.div>
             <div className="hero-container">
                 <div className="hero-image">
                     <span></span>

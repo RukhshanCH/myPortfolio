@@ -10,7 +10,9 @@ import {
     faPaintBrush,
     faTachometerAlt,
     faMagic,
-} from "@fortawesome/free-solid-svg-icons"; import ServicesCard from "../components/ServicesCard"
+} from "@fortawesome/free-solid-svg-icons";
+import ServicesCard from "../components/ServicesCard";
+import RevealSection from "../components/RevealSection";
 
 const Services = () => {
     const services = [
@@ -88,7 +90,7 @@ const Services = () => {
         },
     ];
     return (
-        <section id="services" className="fade-up">
+        <RevealSection id="services">
             <h2 className="section-title">What I Offer</h2>
             <div className="services-grid">
                 {services.map((service, index) => (
@@ -98,7 +100,7 @@ const Services = () => {
                     />
                 ))}
             </div>
-        </section>
+        </RevealSection>
     )
 }
 

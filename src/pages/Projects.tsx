@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard"
+import RevealSection from "../components/RevealSection"
 
 const Projects = () => {
     const data = [
@@ -92,14 +93,14 @@ const Projects = () => {
         },
     ];
     return (
-        <section id="projects" className="fade-up">
+        <RevealSection id="projects">
             <h2 className="section-title">Featured Projects</h2>
             <div className="projects-grid">
                 {data.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}
             </div>
-        </section>
+        </RevealSection>
     )
 }
 

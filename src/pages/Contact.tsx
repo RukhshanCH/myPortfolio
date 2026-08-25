@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import RevealSection from "../components/RevealSection";
 
 const Contact = () => {
     const [status, setStatus] = useState("");
@@ -15,7 +16,7 @@ const Contact = () => {
         setTimeout(() => setStatus(""), 3000);
     };
     return (
-        <section id="contact" className="fade-up">
+        <RevealSection id="contact">
             <h2 className="section-title">Get In Touch</h2>
             <div className="contact-container">
                 <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
@@ -45,7 +46,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </RevealSection>
     )
 }
 

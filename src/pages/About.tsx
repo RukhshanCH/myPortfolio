@@ -1,6 +1,8 @@
+import RevealSection from "../components/RevealSection";
+
 const About = () => {
   return (
-    <section id="about" className="fade-up">
+    <RevealSection id="about">
         <h2 className="section-title">About <span style={{color: "var(--primary)"}}>Rukhshan</span></h2>
         <div className="about-grid">
             <div className="about-text">
@@ -29,7 +31,7 @@ const About = () => {
                 </ul>
             </div>
         </div>
-    </section>
+    </RevealSection>
   )
 }
 
