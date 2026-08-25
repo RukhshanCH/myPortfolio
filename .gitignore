@@ -63,6 +63,7 @@ htmlcov/
 # Node (if using Django + React/Vue)
 # ==============================
 node_modules/
+dist/
 package-lock.json
 yarn.lock
 
