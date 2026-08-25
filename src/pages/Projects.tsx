@@ -5,9 +5,17 @@ const Projects = () => {
     const data = [
         {
             img: " ",
+            title: "Barberly",
+            description: "A barber shop website with booking and service management features.",
+            techStack: ["Next", "TypeScript", "Supabase", "SafePay Integration"],
+            githubLink: "",
+            demoLink: "https://barberly-sable.vercel.app/"
+        },
+        {
+            img: " ",
             title: "V-Productions & Marketing",
             description: "A digital business and training company delivering solutions in various fields.",
-            techStack: ["Next", "TypeScript", "Supabase"],
+            techStack: ["Next", "TypeScript", "Supabase", "RAG + OpenAI API"],
             githubLink: "",
             demoLink: "https://v-marketing-lahore.vercel.app/"
         },
@@ -26,6 +34,14 @@ const Projects = () => {
             techStack: ["React", "IndexexDb"],
             githubLink: "",
             demoLink: "https://roznamcha-eta.vercel.app/"
+        },
+        {
+            img: " ",
+            title: "GrowZap",
+            description: "The Full-Service Digital Marketing Agency Built to Grow Businesses",
+            techStack: ["Next", "TypeScript", "Framer Motion"],
+            githubLink: "https://github.com/RukhshanCH/GrowZap",
+            demoLink: "https://grow-zap.vercel.app/"
         },
         {
             img: " ",
@@ -69,14 +85,6 @@ const Projects = () => {
         },
         {
             img: " ",
-            title: "E-commerce Platform",
-            description: "A full-featured e-commerce platform with payment integration.",
-            techStack: ["HTML", "CSS", "JavaScript"],
-            githubLink: "https://github.com/RukhshanCH/E-commerce-frontend-design",
-            demoLink: "https://e-commerce-website-2025.netlify.app/"
-        },
-        {
-            img: " ",
             title: "Interest Calculator",
             description: "A simple interest calculator app with real-time updates and chart visualization.",
             techStack: ["Typescript", "Next.js"],
@@ -85,11 +93,11 @@ const Projects = () => {
         },
         {
             img: " ",
-            title: "Textutils",
-            description: "A text utility app for performing various text transformations and analyses.",
-            techStack: ["React", "Bootstrap"],
-            githubLink: "https://github.com/RukhshanCH/Textutils",
-            demoLink: "https://textutillsz.netlify.app/"
+            title: "E-commerce Platform",
+            description: "A full-featured e-commerce platform with payment integration.",
+            techStack: ["HTML", "CSS", "JavaScript"],
+            githubLink: "https://github.com/RukhshanCH/E-commerce-frontend-design",
+            demoLink: "https://e-commerce-website-2025.netlify.app/"
         },
     ];
     return (

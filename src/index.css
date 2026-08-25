@@ -67,7 +67,7 @@ html {
     margin: 0;
     overscroll-behavior: none;
     overflow-x: hidden;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 /* Smooth Scroll */
@@ -372,7 +372,7 @@ section {
 /* Skills Cards */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 1.5rem;
 }
 
@@ -413,6 +413,7 @@ section {
     padding: 2rem 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .skill-card:hover {
@@ -626,6 +627,10 @@ footer {
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     }
 
     .skill-icon {

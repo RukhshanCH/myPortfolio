@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import type { IconType } from "react-icons";
 import {
+    SiAnthropic,
     SiBootstrap,
+    SiChatbot,
     SiCss,
     SiDjango,
     SiDocker,
@@ -13,6 +15,8 @@ import {
     SiJavascript,
     SiNextdotjs,
     SiNodedotjs,
+    SiOpenrouter,
+    SiPaypal,
     SiReact,
     SiSupabase,
     SiTailwindcss,
@@ -24,7 +28,7 @@ import RevealSection from "../components/RevealSection";
 type Skill = {
     name: string;
     icon: IconType;
-    category: "Frontend" | "Backend" | "Tools" | "Automation";
+    category: "Frontend" | "Backend" | "Tools" | "Automation" | "AI";
 };
 
 const Skills = () => {
@@ -36,16 +40,20 @@ const Skills = () => {
         { name: "Tailwind CSS", icon: SiTailwindcss, category: "Frontend" },
         { name: "Bootstrap", icon: SiBootstrap, category: "Frontend" },
         { name: "React.js", icon: SiReact, category: "Frontend" },
-        { name: "Framer Motion", icon: SiFramer, category: "Frontend" },
         { name: "Next.js", icon: SiNextdotjs, category: "Frontend" },
         { name: "Node.js", icon: SiNodedotjs, category: "Backend" },
+        { name: "Framer Motion", icon: SiFramer, category: "Frontend" },
         { name: "Flask", icon: SiFlask, category: "Backend" },
         { name: "Django", icon: SiDjango, category: "Backend" },
         { name: "Supabase", icon: SiSupabase, category: "Backend" },
+        { name: "SafePay Integration", icon: SiPaypal, category: "Backend" },
         { name: "Docker", icon: SiDocker, category: "Tools" },
         { name: "Git", icon: SiGit, category: "Tools" },
         { name: "GitHub", icon: SiGithub, category: "Tools" },
         { name: "Zapier", icon: SiZapier, category: "Automation" },
+        { name: "RAG", icon: SiChatbot, category: "AI" },
+        { name: "OpenAI API", icon: SiOpenrouter, category: "AI" },
+        { name: "LLM Workflow", icon: SiAnthropic, category: "AI" },
     ], []);
 
     const categories = useMemo(
