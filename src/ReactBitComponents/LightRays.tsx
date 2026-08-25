@@ -105,7 +105,7 @@ const LightRays: React.FC<LightRaysProps> = ({
   const animationIdRef = useRef<number | null>(null);
   const meshRef = useRef<Mesh | null>(null);
   const cleanupFunctionRef = useRef<(() => void) | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -297,6 +297,7 @@ void main() {
         renderer.dpr = Math.min(window.devicePixelRatio, 2);
 
         const { clientWidth: wCSS, clientHeight: hCSS } = containerRef.current;
+        if (wCSS === 0 || hCSS === 0) return;
         renderer.setSize(wCSS, hCSS);
 
         const dpr = renderer.dpr;
@@ -335,6 +336,14 @@ void main() {
         }
       };
 
+      let resizeObserver: ResizeObserver | null = null;
+      if (containerRef.current && typeof ResizeObserver !== 'undefined') {
+        resizeObserver = new ResizeObserver(() => {
+          updatePlacement();
+        });
+        resizeObserver.observe(containerRef.current);
+      }
+
       window.addEventListener('resize', updatePlacement);
       updatePlacement();
       animationIdRef.current = requestAnimationFrame(loop);
@@ -346,6 +355,10 @@ void main() {
         }
 
         window.removeEventListener('resize', updatePlacement);
+        if (resizeObserver) {
+          resizeObserver.disconnect();
+          resizeObserver = null;
+        }
 
         if (renderer) {
           try {
