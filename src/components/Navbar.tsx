@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const handleThemeToggle = () => {
         setIsDark(prev => !prev);
-        
+
         if (isDark) {
             document.body.classList.add('light');
             document.documentElement.style.setProperty("--primary", "#ff5e00");
@@ -20,16 +20,34 @@ const Navbar = () => {
             document.documentElement.style.setProperty("--shadow-color5", "rgba(255, 152, 51, 0.5)");
 
             document.documentElement.style.setProperty("--background", "#2b0707");
+            document.documentElement.style.setProperty("--profile-bg", "rgba(49, 24, 12, 0.72)");
+            document.documentElement.style.setProperty("--profile-ring", "rgba(255, 255, 255, 0.12)");
+            document.documentElement.style.setProperty("--profile-glow", "rgba(255, 152, 51, 0.26)");
+            document.documentElement.style.setProperty("--button-bg-start", "rgba(38, 20, 12, 0.96)");
+            document.documentElement.style.setProperty("--button-bg-end", "rgba(68, 33, 15, 0.88)");
+            document.documentElement.style.setProperty("--button-border", "rgba(255, 152, 51, 0.35)");
+            document.documentElement.style.setProperty("--button-glow", "rgba(255, 152, 51, 0.22)");
+            document.documentElement.style.setProperty("--button-text", "#111111");
+           document.documentElement.style.setProperty("--button-icon-color", "#fff8f2");
         } else {
             document.body.classList.remove('light');
             document.documentElement.style.removeProperty("--primary");
             document.documentElement.style.removeProperty("--secondary");
-
+ 
             document.documentElement.style.removeProperty("--shadow-color1");
             document.documentElement.style.removeProperty("--shadow-color2");
             document.documentElement.style.removeProperty("--shadow-color3");
             document.documentElement.style.removeProperty("--shadow-color5");
-
+            document.documentElement.style.removeProperty("--profile-bg");
+            document.documentElement.style.removeProperty("--profile-ring");
+            document.documentElement.style.removeProperty("--profile-glow");
+            document.documentElement.style.removeProperty("--button-bg-start");
+            document.documentElement.style.removeProperty("--button-bg-end");
+            document.documentElement.style.removeProperty("--button-border");
+            document.documentElement.style.removeProperty("--button-glow");
+            document.documentElement.style.removeProperty("--button-text");
+            document.documentElement.style.removeProperty("--button-icon-color");
+ 
             document.documentElement.style.removeProperty("--background");
         }
     };
@@ -53,7 +71,7 @@ const Navbar = () => {
     return (
         <nav className="navbar" id="navbar">
             <div className="nav-container">
-                <a href="#home" className="logo" style={{textDecoration: "none"}}>
+                <a href="#home" className="logo" style={{ textDecoration: "none" }}>
                     RS.
                 </a>
                 <div className="menu-icon" id="menuIcon">
@@ -67,7 +85,7 @@ const Navbar = () => {
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#services">Services</a></li>
                 </ul>
-                <button id="themeToggle" aria-label={isDark? "Switch to Dark" : "Switch to Light"} className="theme-toggle" onClick={handleThemeToggle}>
+                <button id="themeToggle" aria-label={isDark ? "Switch to Dark" : "Switch to Light"} className="theme-toggle" onClick={handleThemeToggle}>
                     {isDark ? (
                         <FontAwesomeIcon icon={faSun} />
                     ) : (

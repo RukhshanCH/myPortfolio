@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import usePortfolioInteractions from './usePortfolioInteractions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const Button = () => {
   const { scrollBtnRef } = usePortfolioInteractions();
 
   return (
     <StyledWrapper>
-      <button ref={scrollBtnRef} className="button scroll-top">
-        <FontAwesomeIcon className="svgIcon" icon={faCircleUp} />
+      <button ref={scrollBtnRef} className="button scroll-top" aria-label="Back to top">
+        <FontAwesomeIcon className="svgIcon" icon={faArrowUp} />
       </button>
     </StyledWrapper>
   );
@@ -17,12 +17,16 @@ const Button = () => {
 
 const StyledWrapper = styled.div`
   .button {
-    color: black;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--button-text);
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(30, 30, 30);
-    border: transparent;
+    background: linear-gradient(135deg, var(--button-bg-start), var(--button-bg-end));
+    border: 1px solid var(--button-border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 16px var(--button-glow);
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -30,12 +34,20 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+  }
+
+  .button.show {
+    opacity: 1;
+    visibility: visible;
   }
 
   .svgIcon {
-    width: 27px;
-    height: 27px;
-    color: #fff;
+    width: 20px;
+    height: 20px;
+    color: var(--button-icon-color, #fff);
     transition-duration: 0.3s;
   }
 
@@ -49,7 +61,7 @@ const StyledWrapper = styled.div`
     transition-duration: 0.3s;
     background: linear-gradient(95deg, var(--primary), var(--secondary));
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px var(--shadow-color5);
+    box-shadow: 0 8px 25px var(--shadow-color5), 0 0 24px var(--shadow-color3);
     align-items: center;
     border: transparent;
   }
