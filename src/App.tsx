@@ -1,20 +1,21 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import About from './pages/About'
-import Hero from './pages/Hero'
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Services from './pages/Services';
-import Footer from './Footer';
-import FloatingContactButton from './components/ContactButton';
-import BackToTopButton from './components/BackToTopButton';
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion"
 import Loader from './components/Loader';
-import Separator from './components/Separator';
 import useLenis from './components/useLenis';
-import Experience from './pages/Experience';
 import Cursor from './components/Cursor';
+
+const Navbar = lazy(() => import('./components/Navbar'));
+const Hero = lazy(() => import('./pages/Hero'));
+const Separator = lazy(() => import('./components/Separator'));
+const About = lazy(() => import('./pages/About'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Experience = lazy(() => import('./pages/Experience'));
+const Services = lazy(() => import('./pages/Services'));
+const Footer = lazy(() => import('./Footer'));
+const FloatingContactButton = lazy(() => import('./components/ContactButton'));
+const BackToTopButton = lazy(() => import('./components/BackToTopButton'));
 
 function App() {
   useLenis()
@@ -65,31 +66,33 @@ function App() {
       <Cursor />
       {loader && <Loader />}
       {!loader && (
-        <>
-          <Navbar />
-          <main>
-            <Hero />
-            <Separator />
+        <Suspense fallback={<Loader />}>
+          <>
+            <Navbar />
+            <main>
+              <Hero />
+              <Separator />
 
-            <About />
-            <Separator />
+              <About />
+              <Separator />
 
-            <Skills />
-            <Separator />
+              <Skills />
+              <Separator />
 
-            <Projects />
-            <Separator />
+              <Projects />
+              <Separator />
 
-            <Experience />
-            <Separator />
+              <Experience />
+              <Separator />
 
-            <Services />
-          </main>
-          <Footer />
+              <Services />
+            </main>
+            <Footer />
 
-          <FloatingContactButton />
-          <BackToTopButton />
-        </>
+            <FloatingContactButton />
+            <BackToTopButton />
+          </>
+        </Suspense>
       )}
     </>
   )
