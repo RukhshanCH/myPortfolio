@@ -88,7 +88,7 @@ const Skills = () => {
             <div className="skills-grid">
                 {filteredSkills.map((skill) => (
                     <div className="skill-card" key={skill.name}>
-                        <skill.icon className="skill-icon" />
+                        <skill.icon className="skill-icon" aria-hidden="true" />
                         <span>{skill.name}</span>
                     </div>
                 ))}
