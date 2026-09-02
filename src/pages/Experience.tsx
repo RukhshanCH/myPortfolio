@@ -19,6 +19,21 @@ const Experience = () => {
             description: "A digital business and training company delivering solutions in digital marketing, AI automation, web development, creative services, and practical skill development."
         },
         {
+            date: "May 2026 - Jun 2026",
+            title: <>
+                React Developer @{" "}
+                <a
+                    href="https://grow-zap.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--primary)", textDecoration: "none" }}
+                >
+                    GrowZap
+                </a>
+            </>,
+            description: "Redesigned and rebuilt the company website into a professional portfolio site to showcase GrowZap's services and work."
+        },
+        {
             date: "Jun 2024 - Jul 2025",
             title: <>
                 React Developer @{" "}
@@ -31,7 +46,7 @@ const Experience = () => {
                     DotTechHub
                 </a>
             </>,
-            description: "Leading frontend architecture for enterprise SaaS, mentoring juniors, optimizing performance by 40%."
+            description: "Developed and maintained responsive web applications using React.js and JavaScript, following modern frontend coding practices."
         },
         {
             date: "Jul 2025 - Aug 2025",
@@ -46,7 +61,7 @@ const Experience = () => {
                     DevelopersHub Corporation
                 </a>
             </>,
-            description: "Developed E-commerce Website Frontend."
+            description: "Contributed to development of a functional e-commerce platform, building product listing, shopping cart, and checkout features."
         },
         {
             date: "May 2025 - Jul 2025",
