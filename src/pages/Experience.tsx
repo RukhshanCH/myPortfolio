@@ -4,7 +4,7 @@ import RevealSection from "../components/RevealSection"
 const Experience = () => {
     const data = [
         {
-            date: "Jul 2026 - Present",
+            date: "Jul 2026 - Sep 2026",
             title: <>
                 Web Developer Intern @{" "}
                 <a
