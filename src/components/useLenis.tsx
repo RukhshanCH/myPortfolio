@@ -8,6 +8,7 @@ export default function useLenis() {
       autoToggle: true,
       anchors: true,
       allowNestedScroll: true,
+      syncTouch: true,
       naiveDimensions: true,
       stopInertiaOnNavigate: true,
     });

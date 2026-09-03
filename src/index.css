@@ -70,6 +70,11 @@ html {
     overflow-y: auto;
 }
 
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
